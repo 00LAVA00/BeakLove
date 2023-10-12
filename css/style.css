@@ -1,0 +1,168 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.texttitle{
+  font-family: 'GFS Didot', serif;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.feature-icon{
+  border-radius:50%;
+}
+
+
+.flexcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f1{
+  flex: 1;
+  margin-right: 100px;
+}
+.f22{
+  display: flex;
+  flex: 1;
+  width: 50%;
+  justify-content: center;
+}
+
+
+
+.f2{
+  flex: 0.3;
+
+}
+.profiletext{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+.profile{
+  margin-left: 75px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  width: 100px;
+}
+.profilename{
+  text-align: center;
+}
+
+.flexicon{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.borderprofile{
+  border: 1.5px  solid #E76D70;
+  border-radius: 1rem;
+}
+#bkc{
+  background-color: #E76D70;
+
+  
+}
+
+#bc{
+  border: 1px solid;
+  border-color:  #ff4c68!important;
+}
+
+#softcolor{
+  background-color:#FF9EA0;
+}
+.muchsoft{
+  background: linear-gradient(300deg, #00bfff,#FFCCCD, #FFE0E1);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;}
+  
+.whiteback{
+  background-color: white;
+}
+
+.flexcc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flybird{
+  width: 18%;
+}
+
+.cmpblock{
+  display: block;
+  margin-left:40px;
+}
+
+.cmpimg{
+  border-radius: 0.8rem;
+  margin-bottom: 5px;
+}
+
+
+/* Center the GIF in the middle of the screen */
+.gif-container {
+  display: block;
+  height: 80px; /* Makes the container full height of the viewport */
+  position: relative; /* Add relative positioning for hover animation */
+}
+
+/* Apply animation to the GIF */
+.gif-container img {
+  animation: moveGif 10s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Define the animation */
+@keyframes moveGif {
+  0% {
+    transform: translateX(-100%); /* Start from the very left edge */
+  }
+  100% {
+    transform: translateX(100vw); /* Move to the very right edge */
+  }
+}
+
+/* Add a hover effect to make the gif bounce */
+.gif-container:hover img {
+  animation: bounce 0.5s ease infinite alternate, moveGif 10s linear infinite; /* Add bounce animation on hover */
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the bounce height as needed */
+  }
+}
